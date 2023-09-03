@@ -15,7 +15,7 @@ export default function Navbar() {
   const [showBasic, setShowBasic] = useState(false);
 
   return (
-    <MDBNavbar fixed="top" expand="lg" light bgColor="light">
+    <MDBNavbar expand="lg" light bgColor="light">
       <MDBContainer fluid>
         <MDBNavbarBrand href="#">Alqma.Dev</MDBNavbarBrand>
         <MDBNavbarToggler
