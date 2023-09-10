@@ -3,7 +3,7 @@ import TextTransition, { presets } from "react-text-transition";
 import { motion } from "framer-motion";
 import { useFollowPointer } from "./use-follow-pointer";
 
-const TEXTS = ["Web Wizard", "UI Uchiha", "Tree", "Color"];
+const TEXTS = ["Web Wizard", "UI Uchiha", "FSD"];
 
 const About = () => {
   const ref = useRef(null);
@@ -18,7 +18,7 @@ const About = () => {
   }, []);
   return (
     <div>
-      <motion.div
+      {/* <motion.div
         ref={ref}
         style={{
           width: "10px",
@@ -29,26 +29,26 @@ const About = () => {
         animate={{ x, y }}
         transition={{
           type: "spring",
-          damping: 3,
-          stiffness: 50,
+          damping: 4,
+          stiffness: 120,
           restDelta: 0.001,
         }}
-      />
+      /> */}
       <h1>About</h1>
-      <div className="d-flex">
+      {/* <div className="d-flex">
         <h1>I am a</h1>&nbsp;&nbsp;
         <h1>
           <TextTransition springConfig={presets.wobbly}>
             {TEXTS[index % TEXTS.length]}
           </TextTransition>
         </h1>
-      </div>
-      <motion.h1
+      </div> */}
+      {/* <motion.h1
         whileHover={{ scaleY: 2.5 }}
         whileTap={{ scaleY: 2 }}
         transition={{ type: "spring", stiffness: 400, damping: 2 }}>
         I am
-      </motion.h1>
+      </motion.h1> */}
     </div>
   );
 };
