@@ -1,3 +1,25 @@
 .fp-watermark {
   display: none;
 }
+
+span {
+  background-color: white !important;
+}
+
+.fp-tooltip {
+  color: blanchedalmond !important;
+}
+
+@media only screen and (max-width: 768px) {
+  #fp-nav.fp-right {
+    top: 0;
+    position: fixed;
+    /* left: 10px !important; */
+    background-color: black !important;
+    z-index: 999;
+  }
+
+  ul {
+    background-color: black !important;
+  }
+}

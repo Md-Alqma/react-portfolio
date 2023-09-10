@@ -13,7 +13,13 @@ import {
 
 export default function Navbar() {
   const [showBasic, setShowBasic] = useState(false);
-
+  const FixedHeader = {
+    overflow: "hidden",
+    backgroundColor: "#333",
+    position: "fixed",
+    top: "0",
+    zIndex: "3",
+  };
   return (
     <MDBNavbar expand="lg" light bgColor="light">
       <MDBContainer fluid>
@@ -33,7 +39,7 @@ export default function Navbar() {
             <MDBNavbarLink href="#">Home</MDBNavbarLink>
           </MDBNavbarItem>
           <MDBNavbarItem>
-            <MDBNavbarLink href="#About">About</MDBNavbarLink>
+            <MDBNavbarLink href="#">About</MDBNavbarLink>
           </MDBNavbarItem>
           <MDBNavbarItem>
             <MDBNavbarLink href="#">Skills</MDBNavbarLink>
