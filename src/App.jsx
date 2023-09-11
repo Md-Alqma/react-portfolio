@@ -1,12 +1,11 @@
 import "./App.css";
 import ReactFullpage from "@fullpage/react-fullpage";
-import Navbar from "./Navbar";
-import About from "./About";
-import Skills from "./Skills";
-import Portfolio from "./Portfolio";
-import Contact from "./Contact";
-import Home from "./Home";
-import TestNavbar from "./TestNavbar";
+import Navbar from "./components/Navbar";
+import About from "./sections/About";
+import Skills from "./sections/Skills";
+import Portfolio from "./sections/Portfolio";
+import Contact from "./sections/Contact";
+import Home from "./sections/Home";
 function App() {
   const SectionStyle = {
     height: "100vh",
@@ -21,10 +20,10 @@ function App() {
       <Navbar />
       <ReactFullpage
         scrollingSpeed={1000}
-        navigation
-        navigationPosition="left"
-        navigationTooltips={["Home", "About", "Skills", "Portfolio", "Contact"]}
-        showActiveTooltip
+        // navigation
+        // navigationPosition="left"
+        // navigationTooltips={["Home", "About", "Skills", "Portfolio", "Contact"]}
+        // showActiveTooltip
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
@@ -37,7 +36,7 @@ function App() {
                   Click me to move down
                 </button>
               </div>
-              <div style={SectionStyle} className="section 2">
+              <div id="about" style={SectionStyle} className="section 2">
                 <About />
               </div>
               <div style={SectionStyle} className="section 3">

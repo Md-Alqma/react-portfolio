@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import TextTransition, { presets } from "react-text-transition";
 import { motion } from "framer-motion";
-import { useFollowPointer } from "./use-follow-pointer";
+import { useFollowPointer } from "../use-follow-pointer";
 
 const TEXTS = ["Web Wizard", "UI Uchiha", "FSD"];
 
@@ -17,7 +17,7 @@ const About = () => {
     return () => clearTimeout(intervalId);
   }, []);
   return (
-    <div className="about">
+    <div>
       {/* <motion.div
         ref={ref}
         style={{
