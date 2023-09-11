@@ -19,9 +19,10 @@ export default function Navbar() {
     position: "fixed",
     top: "0",
     zIndex: "3",
+    width: "100%",
   };
   return (
-    <MDBNavbar expand="lg" light bgColor="light">
+    <MDBNavbar style={FixedHeader} expand="lg" light bgColor="light">
       <MDBContainer fluid>
         <MDBNavbarBrand href="#">Alqma.Dev</MDBNavbarBrand>
         <MDBNavbarToggler
@@ -36,10 +37,10 @@ export default function Navbar() {
       <MDBCollapse navbar show={showBasic}>
         <MDBNavbarNav right fullWidth={false} className="mb-2 mb-lg-0">
           <MDBNavbarItem>
-            <MDBNavbarLink href="#">Home</MDBNavbarLink>
+            <MDBNavbarLink href="#home">Home</MDBNavbarLink>
           </MDBNavbarItem>
           <MDBNavbarItem>
-            <MDBNavbarLink href="#">About</MDBNavbarLink>
+            <MDBNavbarLink href="#about">About</MDBNavbarLink>
           </MDBNavbarItem>
           <MDBNavbarItem>
             <MDBNavbarLink href="#">Skills</MDBNavbarLink>

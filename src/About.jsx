@@ -17,7 +17,7 @@ const About = () => {
     return () => clearTimeout(intervalId);
   }, []);
   return (
-    <div>
+    <div className="about">
       {/* <motion.div
         ref={ref}
         style={{

@@ -31,7 +31,7 @@ function App() {
               {/* <div className="section 1 fp-auto-height">
                 <Navbar />
               </div> */}
-              <div style={SectionStyle} className="section 1">
+              <div id="home" style={SectionStyle} className="section 1">
                 <Home />
                 <button onClick={() => fullpageApi.moveSectionDown()}>
                   Click me to move down
