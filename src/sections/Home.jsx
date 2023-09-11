@@ -6,14 +6,13 @@ const HomeBackgroundStyle = {
   backgroundSize: "cover",
 };
 
-const TEXTS = ["Web Wizard", "UI Uchiha", "FSD"];
-
 const Home = ({ sectionStyle }) => {
+  const homeText = "< Alqma.Dev />";
   return (
     <div
       style={{ ...sectionStyle, ...HomeBackgroundStyle }}
       className="section 1">
-      <h1>Home</h1>
+      <h1 style={{ fontSize: "5rem", color: "yellow" }}>{homeText}</h1>
     </div>
   );
 };
