@@ -5,7 +5,7 @@ import { useFollowPointer } from "../use-follow-pointer";
 
 const TEXTS = ["Web Wizard", "UI Uchiha", "FSD"];
 
-const About = () => {
+const About = ({ sectionStyle }) => {
   const ref = useRef(null);
   const { x, y } = useFollowPointer(ref);
   const [index, setIndex] = useState(0);
@@ -17,7 +17,7 @@ const About = () => {
     return () => clearTimeout(intervalId);
   }, []);
   return (
-    <div>
+    <div style={sectionStyle} className="section 2">
       {/* <motion.div
         ref={ref}
         style={{

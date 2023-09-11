@@ -1,8 +1,8 @@
 import React from "react";
 
-const Contact = () => {
+const Contact = ({ sectionStyle }) => {
   return (
-    <div>
+    <div className="section 5" style={sectionStyle}>
       <h1>Contact Us</h1>
     </div>
   );

@@ -1,8 +1,8 @@
 import React from "react";
 
-const Skills = () => {
+const Skills = ({ sectionStyle }) => {
   return (
-    <div>
+    <div className="section 3" style={sectionStyle}>
       <h1>Skills</h1>
     </div>
   );

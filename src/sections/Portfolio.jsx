@@ -1,8 +1,8 @@
 import React from "react";
 
-const Portfolio = () => {
+const Portfolio = ({ sectionStyle }) => {
   return (
-    <div>
+    <div className="section 4" style={sectionStyle}>
       <h1>Portfolio</h1>
     </div>
   );
