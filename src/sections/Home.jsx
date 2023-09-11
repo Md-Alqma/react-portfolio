@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import bg from "../../public/images/home-background.jpg";
 
 const HomeBackgroundStyle = {
   backgroundImage: `url(${bg})`,
   backgroundSize: "cover",
 };
+
+const TEXTS = ["Web Wizard", "UI Uchiha", "FSD"];
+
 const Home = ({ sectionStyle }) => {
   return (
     <div
